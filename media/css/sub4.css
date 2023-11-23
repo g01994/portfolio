@@ -1,0 +1,126 @@
+/* 와이드 pc  */
+
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%; top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto; min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto; min-height:100%; /*동영상 높이를 꽉차게*/
+   transform:translateX(-50%) translateY(-50%);
+   z-index:-100;}
+
+/* 스크롤 다운 */
+.down{border: 2px solid rgba(238, 238, 238, .6); border-radius: 150px; 
+   box-sizing: border-box; font-size: 1rem; 
+   position: absolute; left: 50%; bottom: 6%;
+   transform: translateX(-50%); 
+   width: 40px; height: 70px; z-index: 10;}
+.down::before{
+    content: ''; display: block;
+    width: 8px; height: 8px;
+    position: absolute; top: 15px; left: 50%; margin-left: -4px;
+    background: rgba(238, 238, 238, 1);
+    animation: ani 1s ease-in-out infinite backwards;
+    transition: all .5s ease-in-out;
+    border-radius: 50%;}
+@keyframes ani{
+    0% {opacity: 1; transform: translateY(-2px);}
+    50% {opacity: .5;}
+    100% {opacity: 0; transform: translateY(30px);}}
+.down span{display: block;
+   font-family: 'Shrikhand', serif;
+   color: rgba(238, 238, 238, .8); 
+   position: absolute; left: 50%; bottom: -35px; margin-left: -70px; 
+   white-space: nowrap;
+   animation: ani2 2s infinite;}
+@keyframes ani2{
+   0% {transform: scale(1);}
+   50% {transform: scale(1.05);}
+   100% {transform: scale(1);}}
+
+#content{width:100%; margin:0; background:rgba(0,0,0,.8); position: relative;}
+:root {--purple: #fff3b4; --violet: #f1dc65; --pink: #ffee91;}
+#content > h2{position: absolute; left: 50%; top: -190px; 
+   transform: translate(-50%, -50%); font-size: 5rem; 
+   font-family: 'Shrikhand', serif; font-size: 3em; color:#fff;
+   letter-spacing: 1px;}
+h2 > .magic{display: inline-block; position: relative;}
+h2 > .magic > .magic-star{--size: clamp(10px, 3vw, 80px);  
+   animation: scale 700ms ease forwards;
+   display: block; height: var(--size); left: var(--star-left);
+   position: absolute; top: var(--star-top); width: var(--size);}
+h2 > .magic > .magic-star > svg {
+   animation: rotate 1000ms linear infinite;
+   display: block; opacity: 0.7;}
+h2 > .magic > .magic-star > svg > path {fill: var(--violet);}
+h2 > .magic > .magic-text {animation: background-pan 3s linear infinite;
+   background: linear-gradient(to right, 
+   #BC9443,#CBAA5D,#EFDC99,#f5e6b1,#B18532,#BC9443);
+   background-size: 200%; -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; white-space: nowrap;
+   font-size: 8vw; font-weight: 200; padding: 50px;}
+@keyframes background-pan {
+  from {background-position: 0% center;}
+  to {background-position: -200% center;}}
+@keyframes scale {
+  from, to {transform: scale(0);}
+  50% {transform: scale(1);}}
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}}
+
+/* 갤러리 영역 */
+.masonry{padding: 5% 2%; margin-bottom: 100px;}
+.grid-item,.grid-sizer{ width: 20%; height: auto;}
+.grid-item {padding: 10px; float: left; 
+   box-sizing: border-box; z-index: 1;}
+.grid-item::before{content: ''; display: block;
+   width: 95%; height: 95%; margin: 2.5%;
+   position: absolute; inset: -.1px; transform: translate(2px, 8px);
+   background: linear-gradient(45deg, #0cbcf2, #750cf2, #ff5520, #ffd800);
+   border-radius: 50px; z-index: -1; filter: blur(20px);
+   opacity: 0; transition: all .5s ease-in-out;}
+.grid-item:hover::before{opacity: 1;}
+
+.grid-item img{display: block;
+   border: 3px solid #ddd; border-radius: 30px; 
+   background: linear-gradient(#ffd800, #ff5520, #750cf2, #0cbcf2);
+   background-size: 100% 1100%; filter: brightness(.9);
+   width:100%; transition: all .5s;}
+.grid-item:hover img{
+   animation: animateBg 3s linear infinite;
+   filter: brightness(1); border: 3px solid transparent; 
+   transform: scale(1.01);}
+   @keyframes animateBg {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 0% 100%; }
+    }
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+   .grid-item,.grid-sizer{width: 25%;}
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content{width: auto; margin: 0;}
+   .grid-item,.grid-sizer{ width: 33.33%;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+   .grid-item,.grid-sizer{width: 50%;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   h2 > .magic > .magic-text{font-size: 12vw;}
+   .grid-item,.grid-sizer{width: 100%;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+   #wrap {min-width:320px;}
+}
