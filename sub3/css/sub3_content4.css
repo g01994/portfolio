@@ -1,0 +1,141 @@
+/* 거버넌스 경영 */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ''; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content4/highlighter.png);
+    position: absolute; left: 310px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content4/highlighter.png);
+    position: absolute; right: 310px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .content_area .info #governance{
+    margin-bottom: 200px;}
+#content .content_area .info #governance .background_box{
+    width: 2000px; height: 300px; margin: 0 auto;
+    background: url(../images/content4/background.jpg) no-repeat 50% fixed;
+    position: relative; left: 50%; margin-left: -1000px;
+    margin-bottom: 200px;}
+#content .content_area .info #governance .background_box h4,
+#content .content_area .info #governance .background_box span{
+    color: #fff; position: absolute;}
+#content .content_area .info #governance .background_box h4{
+    left: 40%; top: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem; font-weight: 800; font-style: italic;
+    letter-spacing: -3px;}
+#content .content_area .info #governance .background_box span{
+    left: 44%; top: 180px;
+    font-size: 1.5rem; letter-spacing: -2px;}
+
+#content #governance h5{
+    font-size: 2em; font-weight: 700;
+    color: rgb(20, 80, 163);
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    position: relative;}
+#content #governance h5::before{
+    content: ""; display: block;
+    width: 50px; height: 50px;
+    position: absolute; left: 0; top: 0;}
+#content #governance p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #governance .content_1{
+    margin-bottom: 200px;}
+#content #governance .content_1 h5::before{
+    background: url(../images/content4/list_1.png);}
+#content #governance .content_1 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #governance .content_1 ul{
+    position: relative;
+    padding: 50px; border: 1px solid #999;}
+#content #governance .content_1 ul::before{
+    content: ''; display: block;
+    width: 2px; height: 500px;
+    background: #ccc; border-radius: 100px;
+    position: absolute; left: 25.5%; top: 10%;}
+#content #governance .content_1 ul li{
+    position: relative;}
+#content #governance .content_1 ul li::before{
+    content: ''; display: block;
+    width: 280px; height: 1px;
+    border-bottom: 4px dotted #ccc;
+    position: absolute; right: 26.5%; top: 50%;}
+#content #governance .content_1 ul li dl{
+    position: relative;}
+#content #governance .content_1 ul li dl dt{
+    width: 500px; height: 100px;
+    background: #fff;
+    border: 5px solid rgb(158, 221, 255);
+    border-radius: 50px;
+    margin-bottom: 30px;}
+#content #governance .content_1 ul li dl dt span{
+    display: block;
+    font-size: 1.2em; font-weight: 700; 
+    color: rgb(51, 124, 207);
+    padding-top: 35px;
+    text-align: center;}
+#content #governance .content_1 ul li dl dd{
+    position: absolute; left: 75%; top: 40%;}
+
+#content #governance .content_2{
+    margin-bottom: 200px;}
+#content #governance .content_2 h5::before{
+    background: url(../images/content4/list_2.png);}
+#content #governance .content_2 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #governance .content_2 div{overflow: hidden;}
+#content #governance .content_2 div img{
+    width: 500px; height: 700px; float: left;}
+#content #governance .content_2 ul{
+    width: 650px; float: right;}
+#content #governance .content_2 ul li{
+    position: relative;
+    border-bottom: 1px solid #ccc;}
+#content #governance .content_2 ul li:last-child{
+    border: none;}
+#content #governance .content_2 ul li dl{
+    height: 300px;}
+#content #governance .content_2 ul li dl dt{
+    font-size: 1.5em; font-weight: 700;
+    text-align: center; color: #191d88;
+    margin-top: 60px; margin-bottom: 30px;}
+#content #governance .content_2 ul li:hover dl dt::before{
+    width: 50%; opacity: 1;}
+#content #governance .content_2 ul li dl dd{
+    text-align: center;}
+#content #governance .content_2 ul li a{
+    width: 150px; padding: 10px; 
+    background: #fff; 
+    border: 2px solid #bbb; border-radius: 100px;
+    font-weight: 500;
+    position: absolute; left: 37%; bottom: 20%;
+    transition: all .5s ease-in-out;}
+#content #governance .content_2 ul li:hover a{
+    color: #B20600; border: 2px solid #B20600;}
+#content #governance .content_2 ul li a span{
+    font-variation-settings:'wght' 400;
+    font-size: 1.5em; 
+    position: absolute; right: 6%; top: 25%;}
+#content #governance .content_2 ul li:hover a span{color: #B20600;}

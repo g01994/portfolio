@@ -1,0 +1,75 @@
+/* QnA css */
+#content .content_area{
+    width: 1200px; margin: 0 auto; 
+    position: relative;
+    margin-bottom: 200px;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; left: 320px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; right: 320px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .info .qna{
+    width: 2000px; height: auto; 
+    position: relative; left: 50%; top: 0;
+    margin-left: -1000px;
+    background: rgba(238, 238, 238, 1);
+    padding: 50px 0;}
+
+#content .info .qna .title_group{
+    position: relative;}
+#content .info .qna h4{
+    text-align: center; font-size: 2em;
+    margin-bottom: 30px;}
+#content .info .qna .qna_all{
+    position: absolute; left: 50%;
+    margin-left: 340px;
+    top: 30px;}
+
+#content .info .qna ul{
+    width: 40%; margin-left: 30%;
+    border: 1px solid #ccc;
+    background: #fff;}
+#content .info .qna ul li{
+    margin: 0 5%;}
+#content .info .qna ul li:first-child{margin-top: 5%;}
+#content .info .qna ul li:last-child{margin-bottom: 5%;}
+#content .info .qna ul li .question{
+    position: relative;}
+#content .info .qna ul li .question .trigger{
+    font-weight: 500; font-size: 1.1em;
+    padding: 20px 0 20px 60px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    transition: all .3s ease-in-out;}
+#content .info .qna ul li:hover .question .trigger, .question_color{
+    color: rgba(178, 6, 0, 1);}
+#content .info .qna ul li .question .trigger::before{
+    content: ''; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/question.png);
+    position: absolute; left: 1%; top: 20%;}
+#content .info .qna ul li .question span{
+    display: block;
+    position: absolute; right: 10px; top: 20px;}
+#content .info .qna ul li .answer{
+    display: none; padding: 20px 40px;}

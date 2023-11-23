@@ -1,0 +1,58 @@
+/* 고객지원 공통 css */
+.visual{width: 2000px; height: 400px;
+    position: relative; left: 50%; margin-left: -1000px;}
+.visual span{display: block; font-size: 2rem;
+    position: absolute; left: 50%; margin-left: -180px; top: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800; font-style: italic; 
+    color: #fff; letter-spacing: -2px;}
+.visual span:last-child{font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500; font-style: normal;
+    top: 240px; margin-left: -60px;}
+
+.sub_menu{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_menu ul{width: 1200px; margin: 0 auto; 
+    overflow: hidden; position: relative;}
+.sub_menu ul li{width: 33.33%; float: left; text-align: center; position: relative;}
+.sub_menu ul li:first-child::before{content: ""; display: block;
+    position: absolute; left: 0; top: 18px;
+    width: 1px; height: 20px; background: #999; opacity: .5;}
+.sub_menu ul li::after{content: ""; display: block;
+    position: absolute; right: 0; top: 18px;
+    width: 1px; height: 20px; background: #999; opacity: .5;}
+.sub_menu ul li a{padding: 15px 0; position: relative;
+    font-size: 1.1em; font-weight: 500; letter-spacing: -1px;
+    border-bottom: 3px solid rgba(178, 6, 0, 0);
+    transition: all .5s linear;}
+.sub_menu ul li:hover a, .sub_menu ul li .current{
+    border-bottom: 3px solid rgba(178, 6, 0, 1);
+    color: rgba(178, 6, 0, 1); font-weight: 700;}
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{overflow: hidden; position: relative;}
+#content .title_area::after{content: ""; display: block;
+    width: 4px; height: 150px; background: rgba(178, 6, 0, .8);
+    border-radius: 50px;
+    position: absolute; left: 50%; margin-left: -4px; bottom: 0;}
+#content .title_area .line_map{position: absolute; 
+    right: 0; top: 50px; color: #666; font-size: 1rem;}
+#content .title_area h2{
+    font-family: 'Open Sans', sans-serif; letter-spacing: -2px;
+    font-size: 4em; font-weight: 800; font-style: italic;
+    text-align: center; margin: 200px 0 0;
+    position: relative;}
+#content .title_area h2::before{content: ""; display: block;
+    width: 180px; height: 180px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 28%; top: -80%;
+    z-index: -10;}
+#content .title_area span{display: block; float: left; 
+    position: relative; padding: 0 8px;
+    color: #666;}
+#content .title_area span::before{content: ""; display: block;
+    position: absolute; right: 0; top: 8px;
+    width: 1px; height: 10px; background: #666; opacity: .5;}
+#content .title_area h2+span{margin-left: 40%;}  
+#content .title_area span:last-child{margin-bottom: 250px;}
+#content .title_area span:last-child::before{display: none;}

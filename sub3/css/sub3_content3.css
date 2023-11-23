@@ -1,0 +1,212 @@
+/* 사회 경영 */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; left: 350px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; right: 350px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .content_area .info #society{
+    margin-bottom: 200px;}
+#content .content_area .info #society .background_box{
+    width: 2000px; height: 300px; margin: 0 auto;
+    background: url(../images/content3/background2.jpg) no-repeat 50% fixed;
+    position: relative; left: 50%; margin-left: -1000px;
+    margin-bottom: 200px;}
+#content .content_area .info #society .background_box h4,
+#content .content_area .info #society .background_box span{
+    color: #fff; position: absolute;}
+#content .content_area .info #society .background_box h4{
+    left: 45%; top: 80px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem; font-weight: 800; font-style: italic;
+    letter-spacing: -3px;}
+#content .content_area .info #society .background_box span{
+    left: 44%; top: 180px;
+    font-size: 1.5rem; letter-spacing: -2px;}
+
+#content #society h5{
+    font-size: 2em; font-weight: 700;
+    color: rgb(242, 151, 39);
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    position: relative;}
+#content #society h5::before{
+    content: ""; display: block;
+    width: 50px; height: 50px;
+    position: absolute; left: 0; top: 0;}
+#content #society p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #society .content_1{
+    margin-bottom: 200px;}
+#content #society .content_1 h5::before{
+    background: url(../images/content3/list2_1.png);}
+#content #society .content_1 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #society .content_1 ul{
+    display: flex;}
+#content #society .content_1 ul li{
+    width: 33.33%; 
+    position: relative;}  
+#content #society .content_1 li div{
+    margin: 0 10%;
+    position: relative;}
+#content #society .content_1 li div::before{
+    content: ''; display: block;
+    width: 310px; height: 210px;
+    border: 3px solid rgb(242, 76, 61);
+    border-radius: 45px;
+    position: absolute; left: 3px; top: 13px;}
+#content #society .content_1 li div img{
+    margin: 20px 10px;
+    border-radius: 40px;}
+#content #society .content_1 li dl{
+    width: 80%; margin: 0 10%;}
+#content #society .content_1 li dl dt{
+    font-size: 1.2em; font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: 25px; margin-bottom: 15px;
+    border-bottom: 2px solid rgb(242, 151, 39);
+    padding-left: 20px;
+    position: relative;}
+#content #society .content_1 li dl dt::before{
+    content: ''; display: block;
+    width: 6px; height: 6px;
+    background: #333; border-radius: 50%;
+    position: absolute; left: 0; top: 12px;}
+#content #society .content_1 li dl dd{
+    width: 95%; margin-left: 2.5%;
+    text-align: justify; font-size: .98em;
+    margin-bottom: 10px;}
+
+#content #society .content_2{
+    margin-bottom: 200px;}
+#content #society .content_2 h5::before{
+    background: url(../images/content3/list2_2.png);}
+#content #society .content_2 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #society .content_2 ul{
+    display: flex; flex-wrap: wrap;}
+#content #society .content_2 ul li{
+    width: 25%;
+    position: relative;}
+#content #society .content_2 ul li div{
+    position: relative;
+    margin: 0 25px;}
+#content #society .content_2 ul li div::before{
+    content: ''; display: block;
+    width: 280px; height: 280px;
+    border: 4px solid rgb(242, 76, 61);
+    border-radius: 50%;
+    position: absolute; left: -3.5px; top: -3.5px;
+    transition: all .1s ease-in-out;
+    transition-duration: .5s;}
+#content #society .content_2 ul li:hover div::before{
+    transform: scale(1.03);}
+#content #society .content_2 ul li div::after{
+    content: ''; display: block;
+    width: 320px; height: 320px;
+    border: 2px solid rgba(242, 76, 61, .6);
+    border-radius: 50%;
+    position: absolute; left: -22px; top: -22px;
+    z-index: -10;
+    transition: all .3s ease-in-out;
+    transition-delay: .1s;
+    transition-duration: .6s;}
+#content #society .content_2 ul li:hover div::after{
+    transform: scale(1.03);}
+#content #society .content_2 ul li img{
+    border-radius: 50%;
+    transition: all .5s ease-in-out;}
+#content #society .content_2 ul li:hover img{
+    filter: grayscale(1);}
+#content #society .content_2 ul li dl::before{
+    content: ''; display: block;
+    width: 280px; height: 280px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute; left: 25px; top: 0;
+    transform: rotateY(180deg);}
+#content #society .content_2 ul li:hover dl::before{
+    background: rgba(0, 0, 0, .5);
+    transform: rotateY(360deg);}
+#content #society .content_2 ul li dl dt{
+    width: 80%; padding: 0 16.5%;
+    position: absolute; left: 0; top: 220px;
+    font-size: 1.5em; font-weight: 700;
+    color: #f0c122;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: all .5s ease-in-out;}
+#content #society .content_2 ul li:hover dl dt{
+    opacity: 0;}
+#content #society .content_2 ul li dl dd{
+    width: 70%; padding: 0 20%;
+    text-align: center; line-height: 1.5em;
+    position: absolute; left: 0; top: 50px;
+    color: #fff;
+    opacity: 0; transform: rotateY(180deg);
+    transition: all .6s ease-in-out;}
+#content #society .content_2 ul li:hover dl dd{
+    opacity: 1; transform: rotateY(360deg);}
+
+#content #society .content_3{
+    margin-bottom: 200px;}
+#content #society .content_3 h5::before{
+    background: url(../images/content3/list2_3.png);}
+#content #society .content_3 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #society .content_3 div{
+    margin-bottom: 200px; margin-left: -20px;
+    overflow: hidden;}
+#content #society .content_3 div img{
+    float: left;
+    margin: 20px; border-radius: 40px;}
+#content #society .content_3 div ul{
+    width: 620px; float: right;
+    position: relative;}
+#content #society .content_3 div ul::before{
+    content: ''; display: block;
+    width: 630px; height: 810px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    position: absolute; left: -40px; top: 10px;}
+#content #society .content_3 div ul li{
+    margin-bottom: 10px;}
+#content #society .content_3 div ul li:first-of-type{
+    margin-top: 40px;}
+#content #society .content_3 div li dl{
+    margin-top: 10px;}
+#content #society .content_3 div li dl dt{
+    font-size: 1.2em; font-weight: 700;
+    color: rgb(242, 151, 39);
+    padding-bottom: 10px;}
+#content #society .content_3 div li dl dd{
+    font-size: .9em; line-height: 1.5em;
+    padding: 5px 0;}
+

@@ -1,0 +1,43 @@
+/* CEO인사말 본문 css */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .intro h3{position: relative;}
+#content .content_area .intro h3 ,
+#content .content_area .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content2/highlighter.png);
+    position: absolute; left: 420px; top: 10px;}
+#content .content_area .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content2/highlighter.png);
+    position: absolute; right: 420px; top: 10px;}
+#content .content_area .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 200px;}
+#content .content_area .content_greetings{
+    width: 2000px; background: rgba(238, 238, 238, 1);
+    position: relative; left: 50%; top: 0; margin-left: -1000px;
+    overflow: hidden; margin-bottom: 200px;}
+#content .content_area .content_greetings > img{
+    width: 600px; float: left; margin: 100px 0 100px 300px;}
+#content .content_area .content_greetings .Greetings_txt{
+    width: 700px; float: right; 
+    margin: 100px 300px 100px 0;}
+#content .content_area .content_greetings .Greetings_txt p{
+    padding: 10px; line-height: 1.5em; text-align: justify;}
+#content .content_area .content_greetings .Greetings_txt p strong{
+    font-weight: 400; font-size: 1.1rem;}
+#content .content_greetings .Greetings_txt p:last-of-type{
+    position: absolute; right: 400px; bottom: 100px;}
+#content .content_greetings .Greetings_txt img{
+    width: 120px;
+    position: absolute; right: 290px; bottom: 100px;}

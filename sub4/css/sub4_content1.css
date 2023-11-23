@@ -1,0 +1,61 @@
+/* 재무하이라이트 */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ''; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; left: 350px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; right: 350px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .info .chart1{position: relative;}
+#content .info .chart1 span{
+    position: absolute; right: 0;
+    font-size: .9em;}
+#content .info .chart1 span:first-of-type{top: -3%;}
+#content .info .chart1 span:last-of-type{top: 0;}
+
+#content .talbe_total{
+    margin-bottom: 200px;
+    position: relative;}
+#content .talbe_total table{width: 100%}
+#content .talbe_total table caption{
+    font-size: 1.5em; font-weight: 700;
+    margin-bottom: 50px;}
+#content .talbe_total table thead th{
+    width: 20%; padding: 10px 0;
+    font-size: 1.1em;
+    border-bottom: 2px solid rgba(178, 6, 0, 1);}
+#content .talbe_total table tbody th{
+    font-size: 1.1em; color: rgba(178, 6, 0, 1);
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    border-right: 1px solid rgba(228, 228, 228, 1);}
+#content .talbe_total table tbody td{
+    text-align: center;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    border-right: 1px solid rgba(228, 228, 228, 1);}
+#content .talbe_total table tbody td:last-child{
+    border-right: none;}
+#content .talbe_total span{
+    font-size: .9em;
+    position: absolute; right: 0; bottom: -30%;}
+#content .talbe_total span:first-of-type{right: 180px;}

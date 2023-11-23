@@ -1,0 +1,268 @@
+/* 환경 경영 */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content2/highlighter.png);
+    position: absolute; left: 300px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content2/highlighter.png);
+    position: absolute; right: 300px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .content_area .info #environment{
+    margin-bottom: 200px;}
+#content .content_area .info #environment .background_box{
+    width: 2000px; height: 300px; margin: 0 auto;
+    background: url(../images/content2/background1.jpg) no-repeat 50% fixed;
+    position: relative; left: 50%; margin-left: -1000px;
+    margin-bottom: 200px;}
+#content .content_area .info #environment .background_box h4,
+#content .content_area .info #environment .background_box span{
+    color: #fff; position: absolute;}
+#content .content_area .info #environment .background_box h4{
+    left: 40%; top: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem; font-weight: 800; font-style: italic;
+    letter-spacing: -3px;}
+#content .content_area .info #environment .background_box span{
+    left: 44%; top: 180px;
+    font-size: 1.5rem; letter-spacing: -2px;}
+
+#content #environment h5{
+    font-size: 2em; font-weight: 700;
+    color: rgb(6, 70, 53);
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    position: relative;}
+#content #environment h5::before{
+    content: ""; display: block;
+    width: 50px; height: 50px;
+    position: absolute; left: 0; top: 0;}
+#content #environment p{
+    margin-bottom: 80px; font-size: 1.1em;}
+
+#content #environment .content_1{
+    margin-bottom: 200px;}
+#content #environment .content_1 h5::before{
+    background: url(../images/content2/list1_1.png);}
+#content #environment .content_1 p{
+    margin-bottom: 80px; font-size: 1.1em;}
+#content #environment .con_box{overflow: hidden;}
+#content #environment .con_box div:first-of-type{
+    float: left; width: 500px;
+    padding: 10px;
+    position: relative;}
+#content #environment .con_box div:first-of-type::before{
+    content: ""; display: block; 
+    width: 410px; height: 510px; 
+    border: 4px solid rgba(23, 89, 74, 1);
+    border-radius: 110px;
+    position: absolute; left: 0; top: 0;}
+#content #environment .con_box div:first-of-type img{
+    border-radius: 100px;}
+#content #environment .con_box div:last-of-type{
+    float: right; width: 600px;
+    margin-right: 80px;
+    margin-top: 50px;}
+#content #environment .con_box div:last-of-type dl dt{
+    font-size: 1.2em; font-weight: 500;
+    padding-bottom: 10px; padding-left: 20px;
+    border-bottom: 2px solid rgba(142, 172, 80, 1);
+    position: relative;}
+#content #environment .con_box div:last-of-type dl dt::before{
+    content: ""; display: block;
+    width: 6px; height: 6px;
+    background: #333; border-radius: 50%;
+    position: absolute; left: 0; top: 10px;}
+#content #environment .con_box div:last-of-type dl dd{
+    text-align: justify; line-height: 1.5em;
+    text-indent: 20px;
+    padding-top: 20px; padding-bottom: 50px;}
+
+#content #environment .content_2{
+    margin-bottom: 200px;}
+#content #environment .content_2 h5::before{
+    background: url(../images/content2/list1_2.png);}
+#content #environment .content_2 ul{
+    display: flex;}
+#content #environment .content_2 ul li{
+    width: 28.33%; margin: 0 2.5%;
+    position: relative;}
+#content #environment .content_2 ul li:first-of-type{
+    margin-left: 0;}
+#content #environment .content_2 ul li div{
+    position: relative;}
+#content #environment .content_2 ul li div::before{
+    content: ""; display: block;
+    width: 101%; height: 101%;
+    border: 5px solid rgba(23, 89, 74, 1);
+    border-radius: 90px;
+    position: absolute; left: -1.8%; top: -1.5%;
+    transition: all .5s ease-in-out;}
+#content #environment .content_2 ul li:hover div::before{
+    transform: scale(1.04);}
+#content #environment .content_2 ul li div::after{
+    content: ""; display: block;
+    width: 108%; height: 106%;
+    border: 2px solid rgba(142, 172, 80, .8);
+    border-radius: 98px;
+    position: absolute; left: -4.6%; top: -3.4%;
+    transition: all .8s ease-in-out;}
+#content #environment .content_2 ul li:hover div::after{
+    transform: scale(1.05);}
+#content #environment .content_2 ul li img{
+    width: 100%; border-radius: 80px;
+    transition: all .5s ease-in-out;}
+#content #environment .content_2 ul li:hover img{
+    filter: grayscale(100%);
+    transform: scale(1.02);}
+#content #environment .content_2 ul li dl{
+    width: 340px; height: 485px; border-radius: 80px;
+    background: rgba(0, 0, 0, 0);
+    position: absolute; left: 0; top: 0;
+    transition: all .5s ease-in-out;}
+#content #environment .content_2 ul li:hover dl{
+    transform: rotateY(180deg) scale(1.02);
+    background: rgba(0, 0, 0, .5);
+    z-index: 10; color: #fff;}
+#content #environment .content_2 ul li dl dt, 
+#content #environment .content_2 ul li dl dd{
+    width: 80%; margin-left: 10%;}
+#content #environment .content_2 ul li dl dt{
+    text-align: center; 
+    font-size: 1.5em; font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 120%;
+    background: rgba(254, 255, 222, .5);
+    transition: all .5s ease-in-out;}
+#content #environment .content_2 ul li:hover dl dt{
+    margin-top: 50%;
+    color: rgb(221, 255, 188);
+    background: rgba(0, 0, 0, 0);
+    transform: rotateY(-180deg);}
+#content #environment .content_2 ul li dl dd{
+    text-align: justify; opacity: 0;
+    transform: rotateY(180deg);
+    transition: all .1s ease-in-out;}
+#content #environment .content_2 ul li:hover dl dd{
+    opacity: 1;}
+
+#content #environment .content_3{
+    margin-bottom: 200px;}
+#content #environment .content_3 h5::before{
+    background: url(../images/content2/list1_3.png);}
+#content #environment .content_3 ul li{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 50px;}
+#content #environment .content_3 ul li:last-of-type{
+    margin-bottom: 0;}
+#content #environment .content_3 ul li dl{
+    width: 500px; float: left;
+    padding: 30px;
+    margin-left: 30px;}
+#content #environment .content_3 ul li dl dt{
+    font-size: 1.2em; font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 20px; padding-bottom: 10px;
+    border-bottom: 2px solid rgba(142, 172, 80, 1);
+    position: relative;}
+#content #environment .content_3 ul li dl dt::before{
+    content: ""; display: block;
+    width: 8px; height: 8px;
+    background: #333; border-radius: 50%;
+    position: absolute; left: 0; top: 10px;}
+#content #environment .content_3 ul li dl dd{
+    width: 470px;
+    margin-left: 15px;
+    text-align: justify; padding-bottom: 20px;}
+#content #environment .content_3 ul li dl dd:last-of-type{
+    padding-bottom: 0;}
+#content #environment .content_3 ul li div{
+    width: 500px; float: right;
+    position: relative;
+    margin-right: 20px;}
+#content #environment .content_3 ul li div::before{
+    content: ""; display: block;
+    width: 500px; 
+    border: 5px double rgba(23, 89, 74, 1);
+    border-radius: 20px;
+    position: absolute; left: 0; top: 10px;}
+#content #environment .content_3 ul li:first-of-type div::before{
+    height: 295px;}
+#content #environment .content_3 ul li:last-of-type div:before{
+    height: 250px;}
+#content #environment .content_3 ul li div table{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;}
+#content #environment .content_3 ul li div table caption{
+    font-size: 1.1em; font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(23, 89, 74, 1);}
+#content #environment .content_3 ul li div table thead th{
+    padding-top: 20px; padding-bottom: 10px;}
+#content #environment .content_3 ul li div table th{font-weight: 500;}
+#content #environment .content_3 ul li:first-of-type table caption{
+    margin-top: 70px;}
+#content #environment .content_3 ul li:last-of-type table caption{
+    margin-top: 50px;}
+#content #environment .content_3 ul li div table tbody td{
+    padding: 2px 0;}
+#content #environment .content_3 ul li div span{
+    font-size: .8em;
+    position: absolute; right: 20px; top: 30px;}
+#content #environment .content_3 ul li div p{
+    font-size: .8em;
+    position: absolute; right: 10px; bottom: -150px;}
+
+#content #environment .content_4{
+    margin-bottom: 200px;}
+#content #environment .content_4 h5::before{
+    background: url(../images/content2/list1_4.png);}
+#content #environment .content_4 ul{overflow: hidden;}
+#content #environment .content_4 li:first-of-type{
+    width: 600px; float: left;}
+#content #environment .content_4 li:last-of-type{
+    width: 600px; float: right;}
+#content #environment .content_4 li div{
+    padding: 10px;
+    margin-bottom: 30px;
+    position: relative;}
+#content #environment .content_4 li div::before{
+    content: ""; display: block;
+    width: 510px; height: 310px;
+    border: 3px solid rgba(23, 89, 74, 1);
+    border-radius: 60px;
+    position: absolute; left: 2.5px; top: 2.5px;}
+#content #environment .content_4 div img{
+    border-radius: 50px;}
+#content #environment .content_4 dl{
+    width: 470px; margin-left: 30px;}
+#content #environment .content_4 dl dt{
+    font-size: 1.2em; font-weight: 500;
+    text-align: center; background: rgba(254, 255, 222, .8);
+    margin-bottom: 20px;}
+#content #environment .content_4 dl dd{
+    text-align: justify;
+    text-indent: 10px;}

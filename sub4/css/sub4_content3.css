@@ -1,0 +1,139 @@
+/* 포괄손익계산서 */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ''; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; left: 350px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; right: 350px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .sub_list{
+    width: 100%; overflow: hidden;
+    margin-bottom: 150px;}
+#content .sub_list li{
+    width: 50%; float: left;
+    position: relative;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;}
+#content .sub_list li:hover,
+#content .sub_list li.current{
+    border-bottom: 3px solid rgba(178, 6, 0, .8);}
+#content .sub_list li::before{
+    content: ''; display: block;
+    width: 1px; height: 30px;
+    background: #ccc; border-radius: 100px;
+    position: absolute; left: 0; top: 0;}
+#content .sub_list li:first-child:before{
+    display: none;}
+#content .sub_list li a{
+    position: relative;
+    font-size: 1.2em; font-weight: 500;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .3s ease-in-out;}
+#content .sub_list li:hover a, 
+#content .sub_list li.current a{
+    color: rgba(178, 6, 0, .8);}
+#content .sub_list li a span{
+    color: rgba(178, 6, 0, 1);
+    font-size: 1.5em; 
+    position: absolute; left: 31%; top: 20%;
+    opacity: 0; transition: all .2s ease-in-out;} 
+#content .sub_list li:first-of-type a span{left: 34%;}
+#content .sub_list li:hover a span ,
+#content .sub_list li.current a span{opacity: 1;}
+
+#content .tab{width: 2000px; height: 800px;
+    background: rgba(238, 238, 238, 1);
+    position: relative; left: 50%; top: 0;
+    margin-left: -1000px; 
+    margin-bottom: 200px;}
+#content .tab1{
+    width: 50%;
+    position: relative; left: 25%; top: 10%;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 50px 0 70px;}
+#content .info .tab_unit{
+    position: absolute; right: 10%; top: 13%;
+    font-size: .9em;}
+#content .info .tab2 .tab_unit{
+    position: absolute; right: 10%; top: 12%;
+    font-size: .9em;}
+#content .info .tab_unit2{
+    position: absolute; right: 10%; bottom: 7%;
+    font-size: .8em;}
+#content .info .tab2 .tab_unit2{
+    position: absolute; right: 10%; bottom: 6%;}
+#content .tab1 table{
+    width: 80%; margin: 0 auto;}
+#content .tab1 table caption{
+    font-size: 1.4em; font-weight: 700;
+    padding: 10px 0 20px;
+    border-bottom: 2px solid #ccc;}
+#content .tab1 table thead th{
+    width: 33.33%; font-weight: 700;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 165, 89, .3);
+    text-align: center;}
+#content .tab1 table tbody tr th{
+    text-align: left; padding: 5px 0 5px 120px;
+    border-bottom: 1.5px solid #333;
+    background: rgba(255, 165, 89, .1);}
+#content .tab1 table tbody tr td{
+    font-size: .95em;
+    text-align: center; padding: 3px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;}
+#content .tab1 table tbody tr td:last-child{
+    border-right: none;}
+
+#content .tab2{
+    display: none;
+    width: 50%;
+    position: relative; left: 25%; top: 6%;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 50px 0 70px;}
+#content .tab2 table{
+    width: 80%; margin: 0 auto;}
+#content .tab2 table caption{
+    font-size: 1.4em; font-weight: 700;
+    padding: 10px 0 20px;
+    border-bottom: 2px solid #ccc;}
+#content .tab2 table thead th{
+    width: 33.33%; font-weight: 700;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 165, 89, .3);
+    text-align: center;}
+#content .tab2 table tbody tr th{
+    text-align: left; padding: 5px 0 5px 120px;
+    border-bottom: 1.5px solid #333;
+    background: rgba(255, 165, 89, .1);}
+#content .tab2 table tbody tr td{
+    text-align: center; padding: 3px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;}
+#content .tab2 table tbody tr td:last-child{
+    border-right: none;}

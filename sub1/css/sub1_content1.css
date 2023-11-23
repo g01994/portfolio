@@ -1,0 +1,150 @@
+/* 기업소개 본문 css */
+#content .content_area{width: 1200px; margin: 0 auto;}
+#content .content_area .intro h3{position: relative;}
+#content .content_area .intro h3 ,
+#content .content_area .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -3px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; left: 340px; top: 10px;}
+#content .content_area .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; right: 340px; top: 10px;}
+#content .content_area .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .intro p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 200px;}
+#content .content_area .intro li{overflow: hidden; margin: 100px 0;}
+#content .content_area .intro li img{width: 700px; 
+    border-radius: 30px; margin: 10px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .4);}
+#content .intro li:first-child img{float: left;}
+#content .intro li:last-child img{float: right;}
+#content .intro li dl{width: 460px; margin-bottom: 200px;}
+#content .intro li:first-child dl{float: right; margin-top: 25px;}
+#content .intro li:last-child dl{float: left; margin-top: 50px;}
+#content .intro li dt{position: relative; 
+    font-size: 1.5em; font-weight: 500; 
+    text-align: center; margin: 50px 0;}
+#content .intro li dt mark{
+    color: rgba(178, 6, 0, 1);
+    background: rgba(255, 151, 0, .3);}
+#content .intro li dd{text-align: justify;
+    line-height: 1.5em; margin: 20px 0 0;}
+
+#content .content_area .summary h3{position: relative;}
+#content .content_area .summary h3, 
+#content .content_area .summary h3 ~ span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -3px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .summary h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; left: 400px; top: 10px;}
+#content .content_area .summary h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; right: 350px; top: 10px; margin-right: 50px;}
+#content .content_area .summary h3 ~ span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 100px;}
+#content .content_area .overview_summary{overflow: hidden;}
+#content .content_area .overview_summary li{float: left;
+    width: 300px; height: 300px; 
+    position: relative; overflow: hidden; 
+    transition: all .5s ease;}
+#content .content_area .overview_summary li:hover::before{
+    content: ''; display: block;
+    width: 220px; height: 220px; 
+    background: rgba(255, 165, 89, 1); 
+    border-radius: 50%; filter: blur(10px);
+    position: absolute; left: 15px; top: 20px;
+    z-index: -10;}
+#content .content_area .overview_summary li a{display: block;}
+#content .content_area .overview_summary a img{
+    width: 150px; height: 150px;
+    margin-left: 50px; margin-top: 50px;
+    transition-delay: .5s;
+    transition: all .9s;}
+#content .content_area .overview_summary li:hover img{
+    transform: scale(1.3) rotateY(360deg); opacity: .8;}
+#content .content_area .overview_summary a dl{
+    width: 250px; height: 250px;
+    position: absolute; left: 0; top: 210px; opacity: 1;
+    display: block; text-align: center;
+    transition: all .5s ease;}
+#content .content_area .overview_summary li:hover dl{top: 125px;
+    opacity: 1; transform: scale(1.2); color: #fff;}
+#content .content_area .overview_summary a dl dt{
+    font-size: 1.2em; font-weight: 700;}
+#content .summary #overview{overflow: hidden;
+    margin-top: 100px; margin-bottom: 200px;}
+#content .summary #overview li{overflow: hidden;}
+#content .summary #overview li:first-child{
+    width: 550px; float: left;}
+#content .summary #overview li:last-child{
+    width: 550px; float: right;}
+#content .summary #overview li p{
+    font-size: 1rem; padding: 5px;
+    border-bottom: 1px solid #ccc;}
+#content .summary #overview li p span{
+    font-weight: 700; padding-right: 10px;}
+#content .summary #overview li p span sup{
+    font-size: .5rem; font-weight: 400;}
+#content .summary #overview li p:nth-of-type(6){
+    margin-top: 20px;
+    font-size: .8rem; font-weight: 400; border-bottom: none;}
+
+#content .content_area .map{overflow: hidden;}
+#content .content_area .map h3{position: relative;}
+#content .content_area .map h3 ,
+#content .content_area .map h3 ~ span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -3px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .map h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; left: 320px; top: 10px;}
+#content .content_area .map h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content1/highlighter.png);
+    position: absolute; right: 320px; top: 10px;}
+#content .content_area .map h3 ~ span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 150px;}
+#content .content_area .map #map_kakao{
+    width: 700px; height: 500px; 
+    border: 1px solid #ccc; float: left;
+    margin-bottom: 200px;}
+#content .content_area .map ul{
+    width: 400px; float: right; position: relative;}
+#content .content_area .map ul li{
+    border-bottom: 1px solid #ccc;}
+#content .content_area .map ul dl::before{
+    content: ""; display: block;
+    width: 25px; height: 25px;
+    background: url(../images/content1/check.png) no-repeat;
+    position: relative; left: 0; top: 28px;}
+#content .content_area .map ul li dt{display: block;
+    margin-bottom: 10px; margin-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; font-weight: 700;
+    color: rgba(255, 95, 0, 1);}
+#content .content_area .map ul li dd{display: block;
+    font-size: .95rem; line-height: 1.5rem;}
+#content .content_area .map ul li dd:last-child{
+    margin-bottom: 20px;}

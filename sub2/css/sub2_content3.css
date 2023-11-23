@@ -1,0 +1,209 @@
+/* 문화 예술 css */
+#content .content_area{width: 1200px; margin: 0 auto; 
+    position: relative;}
+#content .content_area .info .intro p{
+    margin-bottom: 100px;}
+#content .content_area .info .intro h3{position: relative;}
+#content .content_area .info .intro h3 ,
+#content .content_area .info .intro span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem; font-weight: 800; letter-spacing: -2px;
+    text-align: center; margin-top: 100px;}
+#content .content_area .info .intro h3::before{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; left: 320px; top: 10px;}
+#content .content_area .info .intro h3::after{
+    content: ""; display: block;
+    width: 40px; height: 40px;
+    background: url(../images/content3/highlighter.png);
+    position: absolute; right: 320px; top: 10px;}
+#content .content_area .info .intro span{display: block;
+    font-size: 1.5rem; font-weight: 500;
+    margin-top: 0; margin-bottom: 60px;}
+#content .content_area .info .intro > p{display: block; 
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em; margin-bottom: 150px;}
+
+#content .content_area .info .content{
+    overflow: hidden; margin: 150px 0 200px;}
+#content .content_area .info .content div{
+    width: 400px; float: left;
+    background: rgba(238, 238, 238, .7);
+    border-radius: 80px;
+    padding: 50px;}
+#content .content_area .info .content div h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em; text-align: center;
+    font-weight: 700; letter-spacing: -2px;
+    color: rgba(255, 95, 0, 1);
+    position: relative;}
+#content .content_area .info .content div h4::before{
+    content: ""; display: block;
+    width: 25px; height: 25px; 
+    background: url(../images/content3/quote_1.png);
+    position: absolute; left: 10px; top: 0;}
+#content .content_area .info .content div h4::after{
+    content: ""; display: block;
+    width: 25px; height: 25px; 
+    background: url(../images/content3/quote_2.png);
+    position: absolute; right: 10px; top: 0;}
+#content .content_area .info .content div span{
+    display: block;
+    font-size: 1.2em; font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;}
+#content .content_area .info .content div p{
+    text-align: justify; text-indent: 10px;
+    margin-bottom: 20px;}
+#content .content_area .info .content div p:last-of-type{
+    margin-bottom: 50px;}
+#content .content_area .info .content div img{
+    border-radius: 40px;}
+
+#content .content_area .info .content div ~ ul{
+   display: flex; flex-wrap: wrap;
+    margin: 15px 0 15px 50px;}
+#content .content_area .info .content div ~ ul li{
+    position: relative; width: 300px; 
+    margin-left: 30px;}
+#content .content_area .info .content div ~ ul li::before{
+    content: ""; display: block; 
+    width: 310px; height: 390px; border-radius: 85px;
+    position: absolute; left: -8px; top: -8px;
+    transition: all .5s ease-in-out;}
+#content .content_area .info .content div ~ ul li:hover::before{
+    transform: scale(1.02);}
+#content .content_area .info .content div ~ ul li:nth-of-type(3),
+#content .content_area .info .content div ~ ul li:nth-of-type(4){
+    margin-top: 30px;}
+#content .content_area .info .content div ~ ul li:nth-of-type(1)::before{
+    border: 3px solid #0aa9ed;}
+#content .content_area .info .content div ~ ul li:nth-of-type(2)::before{
+    border: 3px solid #eb007b;}
+#content .content_area .info .content div ~ ul li:nth-of-type(3)::before{
+    border: 3px solid #0c905e;}
+#content .content_area .info .content div ~ ul li:nth-of-type(4)::before{
+    border: 3px solid #ffd518;}
+#content .content_area .info .content div ~ ul li img{
+    border-radius: 80px;
+    transition: all .5s ease;}
+#content .content_area .info .content div ~ ul li:hover img{
+    transform: scale(1.02); filter: grayscale(100%)}
+#content .content_area .info .content div ~ ul li span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em; font-weight: 800; font-style: italic; 
+    color: #fff; opacity: .9;
+    position: absolute; left: 70px; top: 20px;}
+#content .content_area .info .content 
+div ~ ul li:nth-of-type(1) span{left: 80px; color: #0aa9ed;}
+#content .content_area .info .content 
+div ~ ul li:nth-of-type(2) span{color: #eb007b;}
+#content .content_area .info .content 
+div ~ ul li:nth-of-type(3) span{left: 40px; color: #0c905e;}
+#content .content_area .info .content 
+div ~ ul li:nth-of-type(4) span{left: 35px; color: #ffd518;}
+#content .content_area .info .content div ~ ul li dl{
+    width: 300px; height: 380px; 
+    border-radius: 80px;
+    background: rgba(0, 0, 0, 0); 
+    color: #fff; 
+    position: absolute; left: 0; bottom: 0;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: all .5s ease-in-out;}
+#content .content_area .info .content div ~ ul li:hover dl{
+    background: rgba(0, 0, 0, .3);
+    opacity: 1;
+    transform: rotateY(360deg);}
+#content .content_area .info .content div ~ ul li dl dt{
+    text-align: center;
+    font-size: 1.2em; font-weight: 700;
+    margin-top: 120px;}
+#content .content_area .info .content div ~ ul li dl dd{
+    margin: 0 20px; margin-top: 30px; 
+    opacity: .9; text-align: center;}
+
+#content .content_area .info .space{
+    position: relative;}
+#content .content_area .info .space div h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em; font-weight: 700;
+    color: rgba(255, 95, 0, 1);
+    letter-spacing: -3px; text-align: center;
+    position: relative; margin-bottom: 10px;}
+#content .content_area .info .space div h4::before{
+    content: ""; display: block; width: 40px; height: 30px;
+    background: url(../images/content3/quote_1.png) no-repeat;
+    position: absolute; left: 32%; top: 0;}
+#content .content_area .info .space div h4::after{
+    content: ""; display: block; width: 40px; height: 30px;
+    background: url(../images/content3/quote_2.png) no-repeat;
+    position: absolute; right: 31%; top: 0;}
+#content .content_area .info .space div span{
+    display: block; text-align: center;
+    font-size: 1.2rem; font-weight: 500; margin-bottom: 50px;}
+#content .content_area .info .space div p{
+    display: block; margin-bottom: 100px;
+    text-align: center; font-size: 1.125em; 
+    line-height: 1.5em;}
+#content .content_area .info .space ul{margin-bottom: 150px;}
+#content .content_area .info .space ul li{
+    overflow: hidden;}
+#content .content_area .info .space ul li div{
+    position: relative; 
+    margin-left: 20px; margin-top: 20px;}
+#content .content_area .info .space ul li div::before{
+    content: ""; display: block;
+    width: 810px; height: 610px;
+    border: 3px solid rgba(178, 6, 0, 1);
+    border-radius: 125px;
+    position: absolute; left: -7.5px; top: -7.5px;}
+#content .content_area .info .space ul li div img{
+    float: left; border-radius: 120px;
+    margin-bottom: 50px;}
+#content .content_area .info .space ul li dl{
+    width: 300px; float: right;
+    margin-right: 20px; margin-top: 280px;}
+#content .content_area .info .space ul li dl dt{
+    font-size: 1.5em; font-weight: 700;
+    color: rgba(255, 95, 0, 1);
+    border-bottom: 2px solid rgba(178, 6, 0, .5);
+    margin-bottom: 10px; padding-left: 20px; padding-bottom: 10px;
+    position: relative;}
+#content .content_area .info .space ul li dl dt::before{
+    content: ""; display: block;
+    width: 10px; height: 10px; 
+    background: rgba(255, 95, 0, 1);
+    border-radius: 50%;
+    position: absolute; left: 0; top: 30%;}
+#content .content_area .info .space ul li dd{
+    margin-top: 20px;
+    text-align: justify; line-height: 1.5em;
+    text-indent: 10px;}
+
+#content .content_area .info .space a{
+    display: block; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em; font-weight: 800; 
+    color: rgba(178, 6, 0, 1);
+    font-style: italic; letter-spacing: -2px;
+    margin-right: 50px;
+    position: absolute; right: 10px; bottom: 540px;
+    transition: all .5s ease-in-out;}
+#content .content_area .info .space a:hover{
+    transform: translateX(10px);}
+#content .content_area .info .space a::before{
+    content: ""; display: block;
+    width: 55px; height: 55px;
+    background: rgba(254, 147, 65, .6);
+    border-radius: 50%;
+    position: absolute; left: -15px; top: -10px;
+    z-index: -10; transform: scale(0); 
+    transition: all .5s ease-in-out;}
+#content .content_area .info .space a:hover::before{
+    transform: scale(1);}
+#content .content_area .info .space a span{
+    display: block; font-size: 3rem; font-weight: 800;
+    position: absolute; right: -50px; top: 5px;}
