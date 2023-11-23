@@ -1,0 +1,61 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub4/sub4_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 50%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -80px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -125px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 125px;}
+
+/* qna 영역 */
+.qna{background: rgba(238, 238, 238, .8); padding: 30px 0; margin-bottom: 80px;}
+
+.qna .title_group{position: relative;}
+.qna h5{text-align: center; font-size: 1.2rem; font-weight: 500; 
+    color: #B20600; margin-bottom: 20px; position: relative;}
+.qna h5::before{content: ''; display: block;
+    width: 20px; height: 20px; 
+    background: url(../images/sub4/check.png) no-repeat;
+    position: absolute; left: 50%; margin-left: -75px; top: 0;}
+.qna .qna_all{position: absolute; right: 5%; top: 8px; font-size: .8rem;}
+
+.qna ul{width: 90%; margin: 0 5%; border: 1px solid #ccc; background: #fff;}
+.qna ul li{margin: 0 5%;}
+.qna ul li:first-child{margin-top: 5%;}
+.qna ul li:last-child{margin-bottom: 5%;}
+.qna ul li .question{position: relative;}
+.qna ul li .question .trigger{font-weight: 500; font-size: .95rem;
+    padding: 10px 0 10px 40px; border-bottom: 1px solid #ccc; position: relative;}
+.qna ul li .question .trigger::before{content: ''; display: block;
+    width: 30px; height: 30px; background: url(../images/sub4/qna01x2.png);
+    position: absolute; left: 1%; top: 20%;}
+.qna ul li .question span{display: block; position: absolute; right: 10px; top: 8px;}
+.qna ul li .answer{display: none; padding: 20px 40px; 
+    background: rgba(238, 238, 238, .3);}
+.qna ul li p.answer{font-size: .89rem;}
+
+/* 가상클래스 생성 */
+.qna ul li .question a.question_color{color: #FF5F00;}

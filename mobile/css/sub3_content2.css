@@ -1,0 +1,128 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub3/sub3_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 33.33%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -100px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -128px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 128px;}
+
+/* background_box 영역 */
+.intro .background_box{
+    width: 100%; height: 200px; margin: 0 auto 50px;
+    background: url(../images/sub3/background02.png) no-repeat;
+    background-size: cover;}
+.intro .background_box p, .intro .background_box span{
+    color: #fff; text-align: center;}
+.intro .background_box p{font-family: 'Open Sans', sans-serif;
+    font-size: 2rem; font-style: italic; font-weight: 800;
+    padding-top: 70px;}
+.intro .background_box span{display: block; font-size: 1.2rem; font-weight: 500;}
+
+/* h5 공통 영역 */
+.contentArea h5{
+    font-size: 1.4rem; font-weight: 700;
+    color: rgb(242, 151, 39);
+    letter-spacing: -1px; margin-bottom: 20px; 
+    padding-left: 50px; position: relative;}
+.contentArea h5::before{
+    content: ''; display: block;
+    width: 30px; height: 30px;
+    position: absolute; left: 10px; top: 0;}
+
+/* 지역과 파트너와의 상생 영역 */
+.contentArea .content_1{
+    margin-bottom: 30px;}
+.contentArea .content_1 h5::before{
+    background: url(../images/sub3/list2_1.png);}
+
+.content_1 .swiper-container{padding: 20px 50px 60px;}
+.content_1 .swiper-slide img{display: block; 
+    width: 100%; height: 100%; object-fit: cover; 
+    border-radius: 20px; margin-bottom: 20px;}
+.content_1 .swiper-slide dl{width: 94%; margin: 0 3%;}
+.content_1 .swiper-slide dl dt{font-size: 1.1rem; font-weight: 500; 
+    letter-spacing: -.5px; text-align: center; 
+    padding-bottom: 10px; color: rgb(242, 151, 39);}
+.content_1 .swiper-slide dl dd{text-indent: 10px; line-height: 1.5rem; 
+    padding-bottom: 5px;}
+.content_1 .swiper-pagination-bullet-active{background-color: rgb(242, 190, 34);}
+
+/* 사회공헌 활동 영역 */
+.contentArea .content_2{
+    margin-bottom: 80px;}
+.contentArea .content_2 h5{margin-bottom: 30px;}
+.contentArea .content_2 h5::before{
+    background: url(../images/sub3/list2_2.png);}
+
+.content_2 ul{overflow: hidden; margin: 0 10px;}
+.content_2 ul li{width: 49%; margin: .5%; height: 180px; 
+    float: left; border-radius: 20px;}
+.content_2 ul li img{width: 100%; height: 180px;}
+.content_2 ul li:first-of-type{
+    background: url(../images/sub3/conimg2_01x2.png) no-repeat center;
+    background-size: cover;}
+.content_2 ul li:nth-of-type(2){
+    background: url(../images/sub3/conimg2_02x2.png) no-repeat center;
+    background-size: cover;}
+.content_2 ul li:nth-of-type(3){
+    background: url(../images/sub3/conimg2_03x2.png) no-repeat center;
+    background-size: cover;}
+.content_2 ul li:last-of-type{
+    background: url(../images/sub3/conimg2_04x2.png) no-repeat center;
+    background-size: cover;}
+.content_2 li dl{width: 80%; margin: 0 10%; padding-top: 120px; 
+    text-align: center; color: #fff;}
+.content_2 li dl dt{font-weight: 700; font-size: 1.2rem; 
+    position: relative; z-index: 2;}
+.content_2 li dl dt::before{
+    content: ''; display: block;
+    width: 100%; height: 25px; 
+    background: rgba(242, 190, 34, .8); border-radius: 20px; 
+    position: absolute; left: 50%; margin-left: -50%; top: 0; z-index: -1;} 
+.content_2 li dl dd{font-weight: 500;}
+
+/* 일하기 좋은 일터 구축 영역 */
+.contentArea .content_3{
+    margin-bottom: 80px;}
+.contentArea .content_3 h5::before{
+    background: url(../images/sub3/list2_3.png);}
+
+.content_3 ul{width: 90%; margin: 0 5%;}
+.content_3 ul li{margin: 12px 0 0; padding: 15px 20px 18px;
+    border: 2px solid #eee; border-radius: 15px; box-sizing: border-box;}
+.content_3 dl{position: relative;}
+.content_3 dl::before{display: block; font-size: 1.5rem; letter-spacing: -.5px;
+    position: absolute; right: 0; top: -5px; color: rgb(242, 76, 61);}
+.content_3 li:nth-child(1) dl::before{content: '01';}
+.content_3 li:nth-child(2) dl::before{content: '02';}
+.content_3 li:nth-child(3) dl::before{content: '03';}
+.content_3 li:nth-child(4) dl::before{content: '04';}
+.content_3 li:nth-child(5) dl::before{content: '05';}
+.content_3 dl dt{font-size: 1.2rem; font-weight: 500; 
+    letter-spacing: -0.5px; color: rgb(242, 151, 39);}
+.content_3 dl dd{color: #888; font-size: .95rem;
+    text-align: justify; margin-top: 10px;}

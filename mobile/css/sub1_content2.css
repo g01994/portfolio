@@ -1,0 +1,49 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub1/sub1_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -110px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -95px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 95px;}
+
+.contentArea .content_greetings{
+    background: rgba(238, 238, 238, 1);
+    overflow: hidden; margin-bottom: 100px;}
+.contentArea .content_greetings > div{width: 96%; margin: 0 2%; position: relative;}
+.contentArea .content_greetings div > img{
+    width: 180px; float: left; margin-right: 20px;}
+.contentArea .content_greetings .greetings_txt p{
+    line-height: 1.5rem; font-size: .9rem;
+    text-align: justify; margin-bottom: 20px;
+    text-indent: 20px;}
+.contentArea .content_greetings .greetings_txt p:first-of-type,
+.contentArea .content_greetings .greetings_txt p:nth-last-of-type(2){text-indent: 0}
+.contentArea .content_greetings .greetings_txt p:first-of-type, 
+.contentArea .content_greetings .greetings_txt p:nth-of-type(2) {margin-top: 20px;}
+.contentArea .content_greetings .greetings_txt p strong{
+    font-weight: 400; font-size: .95rem;}
+.contentArea .greetings_txt p:last-of-type{
+    position: absolute; right: 100px; bottom: -20px;}
+.contentArea .content_greetings .greetings_txt img{width: 100px;
+    position: absolute; right: -15px; bottom: -10px;}

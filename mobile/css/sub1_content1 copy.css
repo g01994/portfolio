@@ -1,0 +1,31 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub1/sub1_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 50%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -100px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -145px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 145px;}

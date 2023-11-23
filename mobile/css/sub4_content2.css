@@ -1,0 +1,46 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub4/sub4_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 50%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -95px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -133px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 133px;}
+
+/* map 영역 */
+.map{overflow: hidden; margin-bottom: 80px;}
+.map #map_kakao{width: 100%; height: 350px; border: 1px solid #ccc; 
+    margin-bottom: 20px;}
+.map ul{width: 80%; margin: 0 10%; position: relative;}
+.map ul li{border-bottom: 1px solid #ccc;}
+.map ul dl::before{content: ''; display: block; width: 15px; height: 15px;
+    background: url(../images/sub4/map_check.png) no-repeat;
+    position: relative; left: 0; top: 19px;}
+.map ul li dt{display: block; margin-bottom: 10px; margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; font-weight: 700; color: rgba(255, 95, 0, 1);}
+.map ul li dd{display: block; font-size: .95rem; line-height: 1.5rem;}
+.map ul li dd:last-child{margin-bottom: 20px;}

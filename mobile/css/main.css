@@ -1,0 +1,221 @@
+/* CSS Document */
+
+/* 비주얼 영역 */
+.visual .swiper-container {
+    width: 100%;
+    height: auto;}
+.visual .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;}
+
+.visual{position: relative;}
+.visual img{width: 100%;}
+.visual .swiper-slide .slogan{
+    position: absolute; left: 0; top: 78%;
+    width: 100%; text-align: center; color: #fff;}
+.visual .swiper-slide:first-of-type .slogan{top: 80%;}
+.visual .swiper-slide span{
+    font-size: 2.2rem; font-style: italic; 
+    font-weight: 800; letter-spacing: -2px;
+    line-height: 2rem;}
+.visual .swiper-slide p{
+    margin-top: 5px;
+    font-size: 1.2rem;}
+
+.visual .swiper-pagination-bullet-active{background-color: #b20600;}
+.visual .swiper-pagination-bullet{width: 10px; height: 10px;}
+
+/* 콘텐츠 공통 영역 */
+#content h3{
+    font-size: 2.2rem;
+    margin-left: 10px; margin-bottom: 40px;
+    font-style: italic; font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8rem; letter-spacing: -2px;}
+
+#content .read_more{
+    position: relative; left: 50%; top: 0;
+    width: 200px; height: 50px;
+    background: rgba(255, 95, 0, 1);
+    margin: 30px 30px 0 -100px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 10px 1px rgba(0,0,0,.4);}
+#content .read_more span{
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    position: relative;
+    left: 25px; top: 12px;}
+#content .read_more i{
+    color: #fff;
+    font-size: 1.2em;
+    position: absolute;
+    right: 20px; top: 17.5px;}
+
+/* 기업소개 영역 */
+#content .introduct{
+    padding: 50px 0; 
+    background: #eee;
+    position: relative;}
+#content .introduct .swiper2{
+    padding: 0 20px;}
+#content .introduct li{
+    position: relative; color: #fff;}
+#content .introduct .spanInner{
+    display: block;
+    position: absolute; left: 5%; bottom: 10%;} 
+#content .introduct h4{
+    font-size: 1.8rem; font-weight: 700; 
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 10;}
+#content .introduct h4::before{
+    content: ''; display: block;
+    width: 25px; height: 25px;
+    background: rgba(255, 95, 0, .7);
+    border-radius: 50%;
+    position: absolute; left: 60px; top: 3px;
+    z-index: -10;}
+#content .introduct li:nth-of-type(2) h4::before{left: 70px;}
+#content .introduct li:last-child h4::before{left: 90px;}
+#content .introduct p{
+    font-size: 1.2rem; font-weight: 500;
+    padding-right: 20px; 
+    box-sizing: border-box; 
+    text-align: justify;}
+#content .introduct img{
+    border-radius: 40px; width: 100%;}
+.introduct .swiper-button-next, .introduct .swiper-button-prev{
+   color: #b20600;}
+.introduct .swiper-button-next, 
+.introduct .swiper-container-rtl .swiper-button-prev{
+    right: 25px;}
+.introduct .swiper-button-prev, 
+.introduct .swiper-container-rtl .swiper-button-next{
+    left: 25px;}
+
+/* 사업소개 영역 */
+#content .business{
+    padding: 50px 0; 
+    background: #222;
+    position: relative;}
+#content .business h3{color: #eee;}
+#content .business ul{color: #eee;}
+#content .business ul li .img_box img{
+    width: 80%; margin: 0 10% 5%;}
+#content .business ul li img{
+    width: 100%; border-radius: 20px;}
+#content .business ul li h4{
+    font-size: 1.8rem; font-weight: 700;
+    text-align: left; margin-left: 10%;
+    margin-bottom: 20px;}
+#content .business ul li p{
+    width: 80%; margin: 0 10%;
+    text-align: justify;}
+#content .business .next{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; font-style: italic; 
+    font-size: 1.2em;
+    color: #ffa559;
+    position: absolute; right: 10%; top:0;
+    padding: 15px 30px;}
+#content .business .next span{
+    position: absolute; right: 0; top: 15px;}
+
+/* ESG 경영 영역 */
+#content .sustainability{
+    padding: 50px 0 10px; 
+    background: #eee;}
+#content .sustainability h3{
+    color: #FF5F00;
+    margin-bottom: 0;}
+#content .sustainability h3 ~ p{
+    font-weight: 500;
+    margin-left: 15px; margin-bottom: 30px;}
+#content .sustainability .swiper{
+    width: 100%; padding-bottom: 70px;}
+#content .sustainability .swiper-slide{
+    background-position: center; background-size: cover; 
+    width: 300px; padding: 36px 0; 
+    background: #fff; 
+    border-radius: 25px; 
+    position: relative;}
+.sustainability .swiper-slide h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700; font-size: 1.5rem; 
+    letter-spacing: -1px;
+    text-align: center;}
+.sustainability .swiper-slide:first-of-type h4{color: rgb(6, 70, 53);}
+.sustainability .swiper-slide:nth-of-type(2) h4{color: rgb(242, 151, 39);}
+.sustainability .swiper-slide:nth-of-type(3) h4{color: rgb(178, 6, 0);}
+.sustainability .swiper-slide:last-of-type h4{color: rgb(20, 80, 163);}
+.sustainability .swiper-slide img {
+    display: block; 
+    width: 300px; height: 150px; 
+    margin: 16px auto;}
+.sustainability .swiper-slide p{
+    color: #333; line-height: 1.5em;
+    margin-left: 70px; margin-top: 30px;}
+.sustainability .swiper-slide p span{font-weight: 700;}
+.sustainability .swiper-slide:first-of-type p span{color: rgb(6, 70, 53);}
+.sustainability .swiper-slide:nth-of-type(2) p span{color: rgb(242, 151, 39);}
+.sustainability .swiper-slide:nth-of-type(3) p span{color: rgb(178, 6, 0);}
+.sustainability .swiper-slide:last-of-type p span{color: rgb(20, 80, 163);}
+.sustainability .swiper-slide .moretxt{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 700; letter-spacing: -.5px;
+    margin-left: 110px; margin-top: 20px;}
+.sustainability .swiper-slide:first-of-type .moretxt{color: rgb(6, 70, 53);}
+.sustainability .swiper-slide:nth-of-type(2) .moretxt{color: rgb(242, 151, 39);}
+.sustainability .swiper-slide:nth-of-type(3) .moretxt{color: rgb(178, 6, 0);}
+.sustainability .swiper-slide:last-of-type .moretxt{color: rgb(20, 80, 163);}
+#content .sustainability .swiper-container-3d .swiper-slide-shadow-left{
+    border-radius: 25px; 
+    background-image: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .sustainability .swiper-container-3d .swiper-slide-shadow-right{
+    border-radius: 25px; 
+    background-image: linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0))}
+#content .sustainability .swiper-pagination{padding: 15px 0}
+#content .sustainability .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{background: #ff5f00;}
+
+/* Q&A 영역 */
+#content .qna{
+    padding: 50px 0 10px; 
+    background: #222;}
+#content .qna h3 , 
+#content .qna h3 ~ p , 
+#content .qna a {color: #eee;}
+#content .qna h3{margin-bottom: 5px;}
+#content .qna h3 ~ p{
+    font-weight: 500;
+    margin-left: 15px; margin-bottom: 30px;}
+#content .qna ul{
+    color: #eee; margin: 0 30px 40px 30px;}
+#content .qna ul li{border-top: 1px solid rgba(238,238,238,.4);}
+#content .qna ul li:last-child{border-bottom: 1px solid rgba(238,238,238,.4);}
+#content .qna ul li p.question a{
+    font-size: 1.2rem;
+    padding: 20px 50px 20px;}
+#content .qna ul li .question .trigger{
+    font-weight: 500; font-size: 1.1em;
+    padding: 20px 0 20px 60px;
+    position: relative;}
+#content .qna ul li .question .trigger::before{
+    content: ''; display: block;
+    width: 30px; height: 30px;
+    background: url(../images/qna01x2.png) no-repeat;
+    position: absolute; left: 15px; top: 18px;}
+#content .qna ul li .answer{
+    display: none; padding: 20px 40px;
+    font-size: .98rem;
+    background: rgba(238,238,238,.1);}
+#content .qna .read_more{
+    margin-bottom: 20px;}
+#content .qna .read_more span{
+    left: 32px;}
+
+
+    

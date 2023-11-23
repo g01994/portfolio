@@ -1,0 +1,90 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub2/sub2_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 50%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -125px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -145px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 145px;}
+
+/* 콘텐츠 공통 영역 (h5, span) */
+.intro h5{font-family: 'Open Sans', sans-serif; color: rgb(255, 95, 0);
+    font-size: 1.8rem; font-weight: 800; letter-spacing: -2px; text-align: center;}
+.intro h5 ~ span:first-of-type{display: block; text-align: center; 
+    font-weight: 500; padding-bottom: 30px;}
+.intro > h5 ~ p:first-of-type{width: 90%; margin: 0 5%; 
+    text-indent: 10px; padding-bottom: 10px;}
+
+/* art_content 영역 */
+.art_content > div > img{width: 100%; margin-bottom: 50px;}
+.art_content p{width: 90%; margin: 0 5%; 
+    text-indent: 10px; padding-bottom: 10px;}
+.art_content ul{overflow: hidden; margin: 30px 20px 80px;}
+.art_content ul li{width: 49%; height: 180px; float: left; margin:.5%;
+    position: relative; color: #fff;}
+.art_content .text_box{position: absolute; left: 0; top: 12%; z-index: 20;}
+.art_content ul li span{display: block; text-align: center;
+    font-family: 'Open Sans', sans-serif; font-size: 1.5rem; font-weight: 700; 
+    letter-spacing: -1px; padding-bottom: 10px;}
+.art_content ul li:first-of-type span{color: #0aa9ed;}
+.art_content ul li:nth-of-type(2) span{color: #eb007b;}
+.art_content ul li:nth-of-type(3) span{color: #0c905e;}
+.art_content ul li:last-of-type span{color: #ffd518;}
+.art_content ul li dl{width: 90%; margin: 0 6% 0 4%; text-align: center;}
+.art_content ul li dl dt{font-weight: 500; padding-bottom: 10px;}
+.art_content ul li dl dd{font-size: .95rem;}
+.art_content ul li img{width: 100%; height: 180px; 
+    display: block; object-fit: cover;
+    filter: grayscale(.5); border-radius: 20px;}
+
+/* space_content 영역 */
+.space_content p{display: block; text-align: center; margin-bottom: 50px;}
+.space_content .img_box{width: 80%; margin: 0 10%;}
+.space_content .img_box img{width: 100%; border-radius: 20px; margin-bottom: 30px;}
+.space_content dl{width: 80%; margin: 0 10%;}
+.space_content dl dt{font-size: 1.3rem; font-weight: 700; color: rgb(255, 95, 0);
+    letter-spacing: -1px; margin-left: 5%; margin-bottom: 10px;
+    position: relative;}
+.space_content dl dt::before{
+    content: ''; display: block;
+    width: 6px; height: 6px; background: rgb(255, 95, 0); border-radius: 50%;
+    position: absolute; left: -4%; top: 10px;}
+.space_content dl dt::after{
+    content: ''; display: block;
+    width: 110%; height: 1px; background: rgba(178, 6, 0, 1); border-radius: 50px;
+    position: absolute; left: 50%; margin-left: -55%; bottom: -10px;}
+.space_content dl dd{width: 96%; margin: 5% 2% 0; 
+    line-height: 1.5rem; text-align: justify;}
+.space_content .next{font-family: 'Open Sans', sans-serif; text-align: center;
+    font-weight: 800; font-style: italic; font-size: 1.2em; letter-spacing: -1px;
+    color: #fff; padding: 15px 30px; position: relative;
+    margin-top: 20px; margin-bottom: 50px;}
+.space_content .next::before{
+    content: ''; display: block; width: 140px; height: 40px;
+    background: rgb(178, 6, 0); border-radius: 10px;
+    position: absolute; left: 52.5%; top: 50%; 
+    margin-left: -70px; margin-top: -20px; z-index: -20;}
+.space_content .next span{position: absolute; top: 15px; margin-left: 5px;}

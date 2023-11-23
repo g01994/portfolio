@@ -1,0 +1,125 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub2/sub2_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 50%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -140px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -130px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 130px;}
+
+/* Space Differentiation 영역 */
+/* tab_menu 영역 */
+.tab_menu{width: 100%;}
+.tab_menu ul{margin: 0 auto; overflow: hidden; position: relative;}
+.tab_menu ul li{width: 33.33%; float: left; text-align: center; position: relative;}
+.tab_menu ul li:first-child::before{content: ''; display: block;
+    position: absolute; left: 0; top: 18px;
+    width: 1px; height: 20px; background: #999; opacity: .5;}
+.tab_menu ul li::after{content: ''; display: block;
+    position: absolute; right: 0; top: 18px;
+    width: 1px; height: 20px; background: #999; opacity: .5;}
+.tab_menu ul li a{padding: 15px 0; position: relative;
+    font-size: 1.1em; font-weight: 500; letter-spacing: -1px;
+    color: #666;
+    border-bottom: 3px solid rgba(178, 6, 0, 0);}
+.tab_menu ul li:first-of-type .click{
+    border-bottom: 3px solid rgba(178, 6, 0, 1);
+    color: rgba(178, 6, 0, 1); font-weight: 700;}
+.tab_menu ul li:nth-of-type(2) .click{
+    border-bottom: 3px solid rgba(254, 147, 65, 1);
+    color: rgba(254, 147, 65, 1); font-weight: 700;}
+.tab_menu ul li:last-of-type .click{
+    border-bottom: 3px solid rgba(0, 9, 44, 1);
+    color: rgba(0, 9, 44, 1); font-weight: 700;}
+
+/* tab_content div 영역 */
+.tab_content .conlist > h5 ~ div:first-of-type{
+    padding: 50px 20px 30px; margin-bottom: 50px;}
+.tab_content .conlist div > p{display: block; 
+    font-size: 1.5rem; font-weight: 700; 
+    text-align: center; letter-spacing: -1px; margin-bottom: 20px;
+    position: relative;}
+.tab_content .technology div > p{color: #B20600;}
+.tab_content .prestige div > p{color: rgba(254, 147, 65, 1);}
+.tab_content .concept div > p{color: rgba(0, 9, 44, 1);}
+.tab_content .conlist div > p::before{
+    content: ''; display: block;
+    width: 50%; height: 20px; 
+    background: rgba(178, 6, 0, .2); border-radius: 20px;
+    position: absolute; left: 50%; bottom: -5px; margin-left: -25%; z-index: -20;}
+.tab_content .prestige div > p::before{background: rgba(254, 147, 65, .2);}
+.tab_content .concept div > p::before{background: rgba(0, 9, 44, .2);}
+.tab_content .conlist > h5 ~ div:first-of-type span:nth-of-type(1){
+    display: block; text-align: center;}
+.tab_content .conlist > h5 ~ div:first-of-type span:nth-of-type(2){
+    position: relative; display: block;}
+.tab_content .conlist > h5 ~ div:first-of-type span:nth-of-type(2)::after{
+    content: ''; display: block;
+    width: 150%; height: 70%;
+    background: rgba(238, 238, 238, .5);
+    position: absolute; left: 50%; margin-left: -75%; top: 15%; z-index: -1;}
+.tab_content .technology > h5 ~ div:first-of-type span:nth-of-type(2)::after{
+    background: rgba(178, 6, 0, .8);}
+.tab_content .prestige > h5 ~ div:first-of-type span:nth-of-type(2)::after{
+    background: rgba(254, 147, 65, .8);}
+.tab_content .concept > h5 ~ div:first-of-type span:nth-of-type(2)::after{
+    background: rgba(0, 9, 44, .8);}
+.tab_content .conlist > h5 ~ div:first-of-type img{width: 100%; 
+    margin: 30px 0; border-radius: 20px;}
+
+/* 영화관 소개 텍스트 영역 */
+.tab_content .conlist div:nth-of-type(2){margin-bottom: 50px;}
+.tab_content .conlist div:nth-of-type(2) > p{font-size: 1.4rem;}
+.tab_content .conlist div:nth-of-type(2) > p:before{
+    content: ''; display: block;
+    width: 90%; height: 20px; 
+    background: rgba(178, 6, 0, .2); border-radius: 20px;
+    position: absolute; left: 50%; bottom: -5px; margin-left: -45%; z-index: -20;}
+.tab_content .prestige div:nth-of-type(2) > p::before{
+    background: rgba(254, 147, 65, .2);}
+.tab_content .concept div:nth-of-type(2) > p::before{
+    background: rgba(0, 9, 44, .2);}
+.tab_content .conlist > h5 ~ div:nth-of-type(2) span{
+    display: block; text-align: center;}
+
+/* 영화관 소개 스와이퍼 영역 */
+.box{margin-bottom: 50px;}
+.conlist .swiper-container{padding: 0 50px 50px 30px;}
+.conlist .swiper-slide img{display: block; 
+    width: 100%; height: 100%; object-fit: cover;
+    margin-bottom: 20px; border-radius: 20px;}
+.conlist .swiper-slide dl{width: 96%; margin: 0 2%;}
+.conlist .swiper-slide dl dt{
+    font-family: 'Open Sans', sans-serif; font-size: 1.4rem; 
+    font-weight: 700; letter-spacing: -2px; text-align: center; 
+    padding-bottom: 10px; color: rgba(178, 6, 0, 1);}
+.prestige .swiper-slide dl dt{color: rgba(254, 147, 65, 1);}
+.concept .swiper-slide dl dt{color: rgba(0, 9, 44, 1);}
+.conlist .swiper-slide dl dd{text-indent: 10px; 
+    text-align: justify; line-height: 1.5rem;}
+.conlist .swiper-pagination-bullet-active{background-color: #b20600;}
+.prestige .swiper-pagination-bullet-active{background-color: rgba(254, 147, 65, 1);}
+.concept .swiper-pagination-bullet-active{background-color: rgba(0, 9, 44, 1);}

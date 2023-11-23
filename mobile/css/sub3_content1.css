@@ -1,0 +1,136 @@
+/* 비주얼 영역 */
+.visual{
+    background: url(../images/sub3/sub3_visualx2.png) no-repeat center bottom;
+    background-size: cover;}
+
+/* 서브 메뉴 영역 */
+.subNav ul li{width: 33.33%; float: left; text-align: center; position: relative;}
+
+/* 서브 타이틀 영역(before, after) */
+#content .titleArea h2::before{content: ''; display: block;
+    width: 80px; height: 80px; 
+    background: rgba(255, 95, 0, .7); border-radius: 50%; 
+    position: absolute; left: 50%; top: 20px;
+    transform: translate(-50%,-50%);
+    margin-left: -160px;
+    z-index: -10;}
+
+#content .contentArea .intro h4::before{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: -160px;}
+#content .contentArea .intro h4::after{
+    content: ''; display: block;
+    width: 20px; height: 20px;
+    background: url(../images/highlighterx2.png);
+    position: absolute; left: 50%; top: 18px;
+    transform: translate(-50%,-50%);
+    margin-left: 160px;}
+
+/* background_box 영역 */
+.intro .background_box{
+    width: 100%; height: 200px; margin: 0 auto 50px;
+    background: url(../images/sub3/background01.png) no-repeat;
+    background-size: cover;}
+.intro .background_box p, .intro .background_box span{
+    color: #fff; text-align: center;}
+.intro .background_box p{font-family: 'Open Sans', sans-serif;
+    font-size: 2rem; font-style: italic; font-weight: 800;
+    padding-top: 70px;}
+.intro .background_box span{display: block; font-size: 1.2rem; font-weight: 500;}
+
+/* h5 공통 영역 */
+.contentArea h5{
+    font-size: 1.4rem; font-weight: 700;
+    color: rgb(6, 70, 53);
+    letter-spacing: -1px; margin-bottom: 20px;
+    padding-left: 50px; position: relative;}
+.contentArea h5::before{
+    content: ''; display: block;
+    width: 30px; height: 30px;
+    position: absolute; left: 10px; top: 0;}
+
+/* 폐기물 저감 */
+.contentArea .content_1{
+    margin-bottom: 80px;}
+.contentArea .content_1 h5{
+    margin-bottom: 30px;}
+.contentArea .content_1 h5::before{
+    background: url(../images/sub3/list_1.png);}
+
+.contentArea .content_1 ul{overflow: hidden; margin: 0 15px;}
+.contentArea .content_1 ul li{width: 46%; margin: 0 2%; float: left;}
+.contentArea .content_1 ul li dl dt{font-size: 1.1rem; font-weight: 500; 
+    letter-spacing: -.5px; padding-left: 10px; padding-bottom: 10px; 
+    margin-bottom: 10px; border-bottom: 1px solid rgba(142, 172, 80, 1);
+    position: relative;}
+.contentArea .content_1 ul li dl dt::before{
+    content: ''; display: block;
+    width: 5px; height: 5px; background: #333; border-radius: 50%;
+    position: absolute; left: 0; top: 10px;}
+.contentArea .content_1 ul li dl dd{
+    text-indent: 10px; text-align: justify; font-size: .9rem;}
+
+/* 지속 가능한 자원 사용 */
+.contentArea .content_2{
+    margin-bottom: 80px;}
+.contentArea .content_2 h5::before{
+    background: url(../images/sub3/list_2.png);}
+
+.content_2 .swiper-container{padding: 20px 50px 60px;}
+.content_2 .swiper-slide > div{position: relative;}
+.content_2 .swiper-slide > div::before{
+    content: ''; display: block; width: 100%; height: 100%;
+    border-radius: 50%; border: 3px solid rgb(6, 70, 53);
+    box-sizing: border-box;
+    position: absolute; left: 50%; margin-left: -50%; top: 50%; margin-top: -50%;}
+.content_2 .swiper-slide img{display: block; 
+    width: 100%; height: 100%; object-fit: cover;
+    border-radius: 50%; margin-bottom: 30px;}
+.content_2 .swiper-slide dl{width: 94%; margin: 0 3%;}
+.content_2 .swiper-slide dl dt{font-size: 1.1rem; font-weight: 500; 
+    letter-spacing: -.5px; text-align: center; 
+    padding-bottom: 10px; color: rgba(142, 172, 80, 1);}
+.content_2 .swiper-slide dl dd{text-align: center; line-height: 1.5rem;}
+.content_2 .swiper-pagination-bullet-active{background-color: rgba(142, 172, 80, 1);}
+
+/* 기후 변화 대응 */
+.contentArea .content_3{
+    margin-bottom: 80px;}
+.contentArea .content_3 h5{margin-bottom: 30px;}
+.contentArea .content_3 h5::before{
+    background: url(../images/sub3/list_3.png);}
+
+.content_3 ul li div{position: relative;}
+.content_3 ul li div::before{
+    content: ''; display: block;
+    width: 90%; height: 120%; 
+    border: 2px solid rgba(23, 89, 74, 1); border-radius: 20px; 
+    position: absolute; left: 50%; margin-left: -45%; top: 0%;}
+.content_3 ul li:last-of-type div::before{height: 105%;}
+.content_3 ul li div table{width: 80%; margin-left: 10%; margin-bottom: 10%;
+    text-align: center; position: relative;}
+.content_3 ul li div table caption{display: block; width: 94%; margin: 0 3%;
+    font-size: 1.1em; font-weight: 700; padding-bottom: 10px; 
+    border-bottom: 1px solid rgba(23, 89, 74, 1);
+    position: absolute; left: 0; top: 0; padding-top: 20px;}
+.content_3 ul li div table thead th{
+    padding-top: 60px; padding-bottom: 5px;}
+.content_3 ul li div table th{font-weight: 500;}
+.content_3 ul li div table tbody td{padding: 2px 0;}
+.content_3 ul li div table tr{border-bottom: 1px solid #ccc;}
+.content_3 ul li div span{font-size: .7rem;
+    position: absolute; right: 13%; top: 35px;}
+.content_3 ul li div p{font-size: .7rem; 
+    position: absolute; right: 50%; top: 155px; margin-right: -22%;}
+
+.content_3 ul li dl{width: 80%; margin: 0 10%;}
+.content_3 ul li dl dt{text-align: center; color: rgba(23, 89, 74, 1);
+    font-size: 1.2rem; font-weight: 700; padding: 20px 0;}
+.content_3 ul li:last-of-type dl dt{padding: 0 0 20px;}
+.content_3 ul li dl dd{text-indent: 10px; padding-bottom: 10px;}
+.swiper-button-next, .swiper-button-prev{top: 80%; color: rgba(142, 172, 80, 1);
+    --swiper-navigation-size:30px}
